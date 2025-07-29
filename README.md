@@ -1,8 +1,8 @@
-# Personal Webchat Library
+# Mastra Chatbot Library
 
 A modern React chat interface library for seamless integration with Mastra AI backend systems. Build beautiful, responsive chatbots and AI assistants with minimal setup.
 
-[![npm version](https://badge.fury.io/js/@trungnk%2Fpersonal-webchat-lib.svg)](https://badge.fury.io/js/@trungnk%2Fpersonal-webchat-lib)
+[![npm version](https://badge.fury.io/js/@kientrung1202%2Fmastra-chatbot.svg)](https://badge.fury.io/js/@kientrung1202%2Fmastra-chatbot)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -22,22 +22,22 @@ A modern React chat interface library for seamless integration with Mastra AI ba
 ## 📦 Installation
 
 ```bash
-npm install @trungnk/personal-webchat-lib
+npm install @kientrung1202/mastra-chatbot
 ```
 
 ```bash
-yarn add @trungnk/personal-webchat-lib
+yarn add @kientrung1202/mastra-chatbot
 ```
 
 ```bash
-pnpm add @trungnk/personal-webchat-lib
+pnpm add @kientrung1202/mastra-chatbot
 ```
 
 ## 🚀 Quick Start
 
 ```tsx
-import { ChatInterface } from '@trungnk/personal-webchat-lib';
-import '@trungnk/personal-webchat-lib/style.css';
+import { ChatInterface } from '@kientrung1202/mastra-chatbot';
+import '@kientrung1202/mastra-chatbot/style.css';
 
 function App() {
   return (
@@ -60,7 +60,7 @@ function App() {
 Perfect for dedicated chat pages or customer support sections.
 
 ```tsx
-import { ChatInterface } from '@trungnk/personal-webchat-lib';
+import { ChatInterface } from '@kientrung1202/mastra-chatbot';
 
 function CustomerSupport() {
   return (
@@ -83,7 +83,7 @@ Ideal for websites where you want an unobtrusive chat option.
 
 ```tsx
 import { useState } from 'react';
-import { ChatInterface } from '@trungnk/personal-webchat-lib';
+import { ChatInterface } from '@kientrung1202/mastra-chatbot';
 
 function FloatingChatWidget() {
   const [isOpen, setIsOpen] = useState(false);
@@ -108,7 +108,7 @@ Switch between different AI agents dynamically.
 
 ```tsx
 import { useState } from 'react';
-import { ChatInterface } from '@trungnk/personal-webchat-lib';
+import { ChatInterface } from '@kientrung1202/mastra-chatbot';
 
 function MultiAgentChat() {
   const [selectedAgent, setSelectedAgent] = useState('resume-agent');
@@ -163,7 +163,7 @@ Show different states based on backend connectivity.
 
 ```tsx
 import { useState, useEffect } from 'react';
-import { ChatInterface } from '@trungnk/personal-webchat-lib';
+import { ChatInterface } from '@kientrung1202/mastra-chatbot';
 
 function ConditionalChat() {
   const [isBackendReady, setIsBackendReady] = useState(false);

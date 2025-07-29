@@ -1,5 +1,5 @@
 {
-  "name": "@trungnk/personal-webchat-lib",
+  "name": "@kientrung1202/mastra-chatbot",
   "version": "1.0.0",
   "description": "A React chat interface library for integrating with Mastra AI backend systems",
   "main": "./dist/index.js",
@@ -37,11 +37,11 @@
     "component",
     "library"
   ],
-  "author": "Trung NK",
+  "author": "Kien Trung",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/trungnk/personal-webchat"
+    "url": "https://github.com/Kientrung1202/mastra-chatbot"
   },
   "peerDependencies": {
     "react": "^18.0.0 || ^19.0.0",
