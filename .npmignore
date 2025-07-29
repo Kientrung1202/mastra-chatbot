@@ -1,0 +1,46 @@
+# Development files
+src/
+public/
+*.config.js
+*.config.ts
+.env*
+.vite/
+
+# Build tools
+vite.config.ts
+tsconfig.json
+tsconfig.node.json
+
+# Development dependencies
+node_modules/
+pnpm-lock.yaml
+yarn.lock
+package-lock.json
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+
+# Testing
+__tests__/
+*.test.*
+*.spec.*
+
+# Documentation (keep README.md)
+docs/
+
+# Only include dist and essential files
+!dist/
+!README.md
+!package.json
+!LICENSE 

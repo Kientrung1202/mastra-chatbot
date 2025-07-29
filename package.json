@@ -1,0 +1,67 @@
+{
+  "name": "@trungnk/personal-webchat-lib",
+  "version": "1.0.0",
+  "description": "A React chat interface library for integrating with Mastra AI backend systems",
+  "main": "./dist/index.js",
+  "module": "./dist/index.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.js"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "build:lib": "tsc -b && vite build --mode lib",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "prepublishOnly": "pnpm run build:lib"
+  },
+  "keywords": [
+    "react",
+    "chat",
+    "chatbot",
+    "ai",
+    "mastra",
+    "assistant",
+    "ui",
+    "component",
+    "library"
+  ],
+  "author": "Trung NK",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trungnk/personal-webchat"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
+  },
+  "dependencies": {
+    "@mastra/client-js": "^0.1.30",
+    "@tanstack/react-query": "^5.62.0",
+    "lucide-react": "^0.468.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.1",
+    "@types/react-dom": "^19.0.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.0",
+    "typescript": "~5.6.2",
+    "vite": "^6.0.1",
+    "vite-plugin-dts": "^4.3.0"
+  },
+  "packageManager": "pnpm@8.10.5+sha512.9c161f433d85551c58f1b3a10b18cc3df72b5a02d2caee6566cc05b6f20addef947e795d90c39033bf92de55177ead69d87f62a9daadc91e7a2e3b58f49353a0"
+}
