@@ -10,7 +10,8 @@ export default defineConfig({
     dts({
       insertTypesEntry: true,
       include: ['src/lib/**/*', 'src/components/**/*'],
-      exclude: ['src/**/*.test.ts', 'src/**/*.test.tsx', 'src/**/*.stories.ts']
+      exclude: ['src/**/*.test.ts', 'src/**/*.test.tsx', 'src/**/*.stories.ts'],
+      tsconfigPath: './tsconfig.lib.json'
     })
   ],
   build: {
@@ -29,7 +30,7 @@ export default defineConfig({
           'react/jsx-runtime': 'react/jsx-runtime'
         },
         assetFileNames: (assetInfo) => {
-          if (assetInfo.name === 'style.css') {
+          if (assetInfo.name?.endsWith('.css')) {
             return 'style.css';
           }
           return assetInfo.name || '';
