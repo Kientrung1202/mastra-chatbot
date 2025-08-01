@@ -725,3 +725,11 @@
   max-height: 900px;
   min-width: 350px;
 } 
+
+.ktr_items_end {
+  align-items: end;
+}
+
+.ktr_items_start {
+  align-items: start;
+}

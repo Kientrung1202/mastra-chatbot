@@ -1,6 +1,6 @@
 {
   "name": "@kientrung1202/mastra-chatbot",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A React chat interface library for integrating with Mastra AI backend systems",
   "main": "./dist/index.js",
   "module": "./dist/index.es.js",
