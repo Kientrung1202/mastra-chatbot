@@ -144,69 +144,69 @@ export const ChatInterface: React.FC<ChatInterfaceProps> = ({
       <div className={className}>
         <button
           onClick={toggleChat}
-          className="chat-toggle-btn"
+          className="ktr_chat_toggle_btn"
           aria-label="Open chat"
         >
-          <MessageCircle className="w-6 h-6" />
+          <MessageCircle className="ktr_w_6 ktr_h_6" />
         </button>
       </div>
     );
   }
 
   return (
-    <div className={`chat-container ${className}`}>
+    <div className={`ktr_chat_container ${className}`}>
       {/* Header - Fixed */}
-      <div className="chat-header">
-        <div className="chat-header-content">
-          <div className="chat-header-info">
-            <div className="chat-header-icon">
-              <MessageCircle className="w-4 h-4" />
+      <div className="ktr_chat_header">
+        <div className="ktr_chat_header_content">
+          <div className="ktr_chat_header_info">
+            <div className="ktr_chat_header_icon">
+              <MessageCircle className="ktr_w_4 ktr_h_4" />
             </div>
             <div>
-              <h1 className="chat-header-title">{title}</h1>
-              <p className="chat-header-subtitle">{subtitle}</p>
+              <h1 className="ktr_chat_header_title">{title}</h1>
+              <p className="ktr_chat_header_subtitle">{subtitle}</p>
             </div>
           </div>
           {showToggleButton && (
             <button
               onClick={toggleChat}
-              className="chat-close-btn"
+              className="ktr_chat_close_btn"
               aria-label="Close chat"
             >
-              <X className="w-5 h-5" />
+              <X className="ktr_w_5 ktr_h_5" />
             </button>
           )}
         </div>
       </div>
 
       {/* Messages - Scrollable */}
-      <div className="chat-messages">
+      <div className="ktr_chat_messages">
         {messages.map((message) => (
           <div
             key={message.id}
-            className={`chat-message ${
-              message.role === 'user' ? 'chat-message-user' : ''
+            className={`ktr_chat_message ${
+              message.role === 'user' ? 'ktr_chat_message_user' : ''
             }`}
           >
-            <div className={`chat-message-avatar ${
-              message.role === 'user' ? 'chat-message-avatar-user' : 'chat-message-avatar-assistant'
+            <div className={`ktr_chat_message_avatar ${
+              message.role === 'user' ? 'ktr_chat_message_avatar_user' : 'ktr_chat_message_avatar_assistant'
             }`}>
               {message.role === 'user' ? (
-                <User className="w-3 h-3" />
+                <User className="ktr_w_3 ktr_h_3" />
               ) : (
-                <Bot className="w-3 h-3" />
+                <Bot className="ktr_w_3 ktr_h_3" />
               )}
             </div>
-            <div className="chat-message-content">
+            <div className="ktr_chat_message_content">
               <div
-                className={`chat-bubble ${
-                  message.role === 'user' ? 'chat-bubble-user' : 'chat-bubble-assistant'
+                className={`ktr_chat_bubble ${
+                  message.role === 'user' ? 'ktr_chat_bubble_user' : 'ktr_chat_bubble_assistant'
                 }`}
               >
                 {message.content}
               </div>
-              <div className={`chat-message-time ${
-                message.role === 'user' ? 'chat-message-time-user' : ''
+              <div className={`ktr_chat_message_time ${
+                message.role === 'user' ? 'ktr_chat_message_time_user' : ''
               }`}>
                 {formatTime(message.timestamp)}
               </div>
@@ -215,15 +215,15 @@ export const ChatInterface: React.FC<ChatInterfaceProps> = ({
         ))}
         
         {isLoading && (
-          <div className="chat-loading">
-            <div className="chat-message-avatar chat-message-avatar-assistant">
-              <Bot className="w-3 h-3" />
+          <div className="ktr_chat_loading">
+            <div className="ktr_chat_message_avatar ktr_chat_message_avatar_assistant">
+              <Bot className="ktr_w_3 ktr_h_3" />
             </div>
-            <div className="chat-message-content">
-              <div className="chat-loading-dots">
-                <div className="chat-loading-dot"></div>
-                <div className="chat-loading-dot"></div>
-                <div className="chat-loading-dot"></div>
+            <div className="ktr_chat_message_content">
+              <div className="ktr_chat_loading_dots">
+                <div className="ktr_chat_loading_dot"></div>
+                <div className="ktr_chat_loading_dot"></div>
+                <div className="ktr_chat_loading_dot"></div>
               </div>
             </div>
           </div>
@@ -233,15 +233,15 @@ export const ChatInterface: React.FC<ChatInterfaceProps> = ({
       </div>
 
       {/* Input - Fixed at bottom */}
-      <div className="chat-input-area">
-        <div className="chat-input-wrapper">
-          <div className="chat-input-field">
+      <div className="ktr_chat_input_area">
+        <div className="ktr_chat_input_wrapper">
+          <div className="ktr_chat_input_field">
             <textarea
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyPress={handleKeyPress}
               placeholder={placeholder}
-              className="chat-input"
+              className="ktr_chat_input"
               style={{ minHeight: '2.5rem', maxHeight: '8rem' }}
               rows={1}
               disabled={isLoading}
@@ -250,9 +250,9 @@ export const ChatInterface: React.FC<ChatInterfaceProps> = ({
           <button
             onClick={sendMessage}
             disabled={!input.trim() || isLoading}
-            className="chat-send-btn"
+            className="ktr_chat_send_btn"
           >
-            <Send className="w-4 h-4" />
+            <Send className="ktr_w_4 ktr_h_4" />
           </button>
         </div>
       </div>

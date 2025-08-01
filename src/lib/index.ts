@@ -1,5 +1,5 @@
-// Import the CSS styles for the library (includes Tailwind)
-import './tailwind-styles.css';
+// Import the CSS styles for the library (uses ktr_ prefix classes)
+import './ktr-styles.css';
 
 // Export the main component
 export { ChatInterface } from '../components/ChatInterface';
