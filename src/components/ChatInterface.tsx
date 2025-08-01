@@ -197,7 +197,7 @@ export const ChatInterface: React.FC<ChatInterfaceProps> = ({
                 <Bot className="ktr_w_3 ktr_h_3" />
               )}
             </div>
-            <div className="ktr_chat_message_content" style={{ alignItems: message.role === 'user' ? 'end' : 'start' }}>
+            <div className="ktr_chat_message_content ktr_w_full" style={{ alignItems: message.role === 'user' ? 'end' : 'start' }}>
               <div
                 className={`ktr_chat_bubble ${
                   message.role === 'user' ? 'ktr_chat_bubble_user' : 'ktr_chat_bubble_assistant'
